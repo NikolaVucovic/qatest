@@ -14,8 +14,8 @@ public class registrationform
         static void setUp() {
             Configuration.holdBrowserOpen = true;
             Configuration.baseUrl = "https://demoqa.com";
-            Configuration.browserPosition = "0x0";
             Configuration.browserSize = "1920x1080";
+            Configuration.browserPosition = "0x0";
         }
 
         @Test
