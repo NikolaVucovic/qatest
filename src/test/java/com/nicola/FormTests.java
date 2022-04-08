@@ -19,7 +19,7 @@ public class FormTests {
     }
     @AfterAll
     static void close() {
-        closeWindow();
+      closeWindow();
     }
 
     @Test
@@ -47,9 +47,9 @@ public class FormTests {
         $("[id=genterWrapper]").$(byText(Gender)).click();
         $("[id=userNumber]").setValue(Phone);
         $("[id=dateOfBirthInput]").click();
-        $(".react-datepicker__month-select").selectOptionContainingText("December");
-        $(".react-datepicker__year-select").selectOptionContainingText("1985");
-        $(".react-datepicker__day--002").click();
+        $(".react-datepicker__month-select").selectOption("December");
+        $(".react-datepicker__year-select").selectOption("1985");
+        $(".react-datepicker__month").$(byText("2")).click();
         $("#subjectsInput").setValue(Subject).pressEnter();
         $("#hobbiesWrapper").$(byText(Hobbies)).click();
         $("#uploadPicture").uploadFromClasspath(ImagePath);
